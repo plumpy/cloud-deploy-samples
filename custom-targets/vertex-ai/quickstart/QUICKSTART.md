@@ -68,7 +68,7 @@ From within the `quickstart` directory, run this command to build the Vertex AI 
 install the custom target resources:
 
 ```shell
-../build_and_register.sh -p $PROJECT_ID -r $REGION
+../build_and_register.sh
 ```
 
 For information about the `build_and_register.sh` script, see the [README](../README.md#build)

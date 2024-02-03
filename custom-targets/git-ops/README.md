@@ -59,7 +59,9 @@ The Gitlab PAT must be configured to use the role `Maintainer` with the `api` an
 The `build_and_register.sh` script within this `git-ops` directory can be used to build the Git deployer image and register a Cloud Deploy custom target type that references the image. To use the script run the following command:
 
 ```shell
-./build_and_register.sh -p $PROJECT_ID -r $REGION
+export PROJECT_ID="YOUR_PROJECT_ID"
+export REGION="YOUR_REGION"
+curl https://raw.githubusercontent.com/GoogleCloudPlatform/cloud-deploy-samples/main/custom-targets/git-ops/build_and_register.sh | bash
 ```
 
 The script does the following on your behalf:

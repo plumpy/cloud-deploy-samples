@@ -55,7 +55,7 @@ Make sure the default compute service account, `{project_number}-compute@develop
 From within the `quickstart` directory, run the following command to build the Helm deployer image and register a Cloud Deploy custom target type that references the image:
 
 ```shell
-../build_and_register.sh -p $PROJECT_ID -r $REGION
+../build_and_register.sh
 ```
 
 For information about the `build_and_register.sh` script, see the [README](../README.md#build)

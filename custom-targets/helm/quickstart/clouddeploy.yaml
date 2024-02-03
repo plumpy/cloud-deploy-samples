@@ -30,4 +30,4 @@ metadata:
 customTarget:
   customTargetType: helm
 deployParameters:
-  customTarget/helmGKECluster: projects/$PROJECT_ID/locations/$REGION/clusters/$CLUSTER_ID
+  customTarget/helmGKECluster: projects/plumpy-cd-test23/locations/us-west2/clusters/quickstart-cluster-helm

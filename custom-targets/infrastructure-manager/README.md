@@ -51,7 +51,9 @@ Additionally, Terraform variables can be passed in via deploy parameters with th
 The `build_and_register.sh` script within this `infrastructure-manager` directory can be used to build the Infrastructure Manager deployer image and register a Cloud Deploy custom target type that references the image. To use the script run the following command:
 
 ```shell
-./build_and_register.sh -p $PROJECT_ID -r $REGION
+export PROJECT_ID="YOUR_PROJECT_ID"
+export REGION="YOUR_REGION"
+curl https://raw.githubusercontent.com/GoogleCloudPlatform/cloud-deploy-samples/main/custom-targets/infrastructure-manager/build_and_register.sh | bash
 ```
 
 The script does the following on your behalf:
